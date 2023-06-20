@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="/css/style.css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="/images/favicoon.png">
+	<title>Democracia2 - Votações em curso</title>
+</head>
+<body>
+	<div class="images-container">
+		<div class="logo-container">
+			<img alt="logo_site" src="/images/logo.png" class="logo">
+		</div>
+		<div class="profile-container">
+			<div class="user">
+				<span class="username" th:text="${cidadao.name}"></span>
+			</div>
+			<a class="sign-out" th:href="'/'">Sign out</a>
+		</div>
+	</div>
+	<div class="content-container">
+		<h1>Votações em curso</h1>
+	
+		<div class="tabela-container">
+			<table class="tabela">
+			<thead>
+				<tr>
+					<th>Votação</th>
+					<th>Estado</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="votacao: ${votList}">
+					<td> <a th:href="'/' + ${cidadao.numCC} + '/listarVot/' + ${votacao.id}" th:text="${votacao.id}"></a></td>
+					<td th:text="${votacao.estado.toString()}"> </td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+	</div>
+	<div class="button-container">
+		<a th:href="'/' + ${cidadao.numCC} + '/dashboard'"><button>Voltar</button></a>
+	</div>
+	
+</body>
+</html>

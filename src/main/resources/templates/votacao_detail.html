@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="/css/style.css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="/images/favicoon.png">
+	<title>Democracia2 - Detalhes da Votação</title>
+</head>
+<body>
+
+	<div class="images-container">
+		<div class="logo-container">
+			<img alt="logo_site" src="/images/logo.png" class="logo">
+		</div>
+		<div class="profile-container">
+			<div class="user">
+				<span class="username" th:text="${cidadao.name}"></span>
+			</div>
+			<a class="sign-out" th:href="'/'">Sign out</a>
+		</div>
+	</div>
+	
+	<div class="content-container">
+		<h1>Detalhes da Votação</h1>
+	
+		<div class="lista-container">
+			<ul class="votacao-lista">
+				<li>
+					<span>Tema:</span>
+					<span th:text="${votacao.tema}"></span>
+				</li>
+				
+				<li>
+					<span>Voto do Delegado:</span>
+					<span th:text="${votoDel}"></span>
+				</li>
+			</ul>
+			
+			<form class="form-votacao" method="POST" th:action="@{'/' + ${cidadao.numCC} + '/votarProposta/' + ${votacao.id}}">
+				<label for="voto">Voto Pessoal:</label>
+				<select id="voto" name="voto">
+					<option value="1">A favor</option>
+					<option value="0">Contra</option>
+				</select>
+				<input type="submit" value="Votar">
+			</form>
+		</div>
+	</div>
+	<div class="button-container">
+		<a th:href="'/' + ${cidadao.numCC} + '/listarVot'"><button>Voltar</button></a>
+	</div>
+</body>
+</html>

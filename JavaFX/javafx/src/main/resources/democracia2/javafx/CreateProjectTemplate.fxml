@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="democracia2.javafx.CreateProjectController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Aprsentar Projeto Lei">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="600.0">
+         <children>
+            <Label text="Título:" />
+            <TextField fx:id="title" prefHeight="17.0" prefWidth="187.0">
+               <HBox.margin>
+                  <Insets left="22.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="89.0" prefWidth="600.0">
+         <children>
+            <Label text="Descrição:" />
+            <TextArea fx:id="description" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="70.0" prefWidth="200.0" wrapText="true">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextArea>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="42.0" prefWidth="600.0">
+         <children>
+            <Label text="Validade:" />
+            <DatePicker fx:id="endDate">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="37.0" prefWidth="600.0">
+         <children>
+            <Label text="Tema:" />
+            <ComboBox fx:id="themeList" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="24.0" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="44.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="fileName" text="Nenhum ficheiro selecionado" />
+            <Button mnemonicParsing="false" onAction="#chooseFile" text="Selecionar Ficheiro">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="54.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#submit" text="Submeter" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="600.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#goBack" text="Voltar">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

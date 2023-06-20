@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="democracia2.javafx.ProjectDetailController">
+   <children>
+      <Label fx:id="title" alignment="CENTER" prefHeight="57.0" prefWidth="171.0" text="Placeholder">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="21.0" prefWidth="270.0">
+         <children>
+            <Label text="Tema:">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="theme" text="Label">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="71.0" prefWidth="273.0">
+         <children>
+            <Label text="Descrição:" />
+            <Label fx:id="description" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="55.0" prefWidth="183.0" text="Lorem Ipsum isto aquilo bla bla blaadasdasdasdaajlnkjashdkasdkuadkuagsdjygadyagsdyasdyafdyafsdyafdyafdyad" wrapText="true">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="24.0" prefWidth="274.0">
+         <children>
+            <Label text="Delegado Proponente: " />
+            <Label fx:id="proponent" text="Label">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="28.0" prefWidth="271.0">
+         <children>
+            <Label text="Data de Fecho: " />
+            <Label fx:id="closeDate" text="Label">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="35.0" prefWidth="555.0">
+         <children>
+            <Label fx:id="documentName" text="Label" />
+            <Button mnemonicParsing="false" onAction="#viewDocument" text="Ver">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="supportBtn" mnemonicParsing="false" onAction="#supportProject" text="Apoiar">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Button>
+      <HBox fillHeight="false" prefHeight="34.0" prefWidth="555.0">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goBack" prefHeight="31.0" prefWidth="74.0" text="Voltar">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="80.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

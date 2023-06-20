@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="/css/style.css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="/images/favicoon.png">
+	<title>Democracia2 - Apresentar Projeto de Lei</title>
+</head>
+<body>
+	<div class="images-container">
+		<div class="logo-container">
+			<img alt="logo_site" src="/images/logo.png" class="logo">
+		</div>
+		<div class="profile-container">
+			<div class="user">
+				<span class="username" th:text="${cidadao.name}"></span>
+			</div>
+			<a class="sign-out" th:href="'/'">Sign out</a>
+		</div>
+	</div>
+	<div class="content-container">
+		<h1>Apresentar Projeto de Lei</h1>
+
+		<form class="apl-form" method="POST" enctype="multipart/form-data" th:action="@{'/' + ${cidadao.numCC} + '/apresProjLei'}">
+			<div class="titulo-container">
+				<label for="titulo">Título:</label>
+				<input type="text" id="titulo" name="titulo" required>
+			</div>
+
+			<div class="descricao-container">
+				<label for="descricao">Descrição:</label>
+				<input type="text" id="descricao" name="descricao" required>
+			</div>
+
+			<div class="validade-container">
+				<label for="validade">Validade:</label>
+				<input type="date" id="validade" name="validade" required>
+			</div>
+
+			<div>
+				<label for="pdf">PDF:</label>
+				<input type="file" id="pdf" name="pdf" accept=".pdf">
+			</div>
+
+			<div class="tema-container">
+				<label for="tema">Tema:</label>
+				<select id="tema" name="tema" required>
+					<option th:each="tema : ${temas}" th:value="${tema.id}" th:text="${tema.tipo}"></option>
+				</select>
+			</div>
+
+			<div>
+				<input class="button-cotainer-apresentarProjLei-submit" type="submit" value="Submeter">
+			</div>
+
+		</form>
+
+
+	</div>
+
+	<div class="button-container-apresentarProjLei">
+		<div class="back">
+			<a th:href="'/' + ${cidadao.numCC} + '/dashboard'"><button>Voltar</button></a>
+		</div>
+	</div>
+</body>
+
+<script>
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth() + 1;
+  var yyyy = today.getFullYear();
+
+  if (dd < 10) {
+    dd = '0' + dd;
+  }
+
+  if (mm < 10) {
+    mm = '0' + mm;
+  }
+
+  var minDate = yyyy + '-' + mm + '-' + dd;
+  document.getElementById('validade').setAttribute('min', minDate);
+</script>
+
+</html>

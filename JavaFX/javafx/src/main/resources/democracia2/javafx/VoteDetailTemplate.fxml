@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="democracia2.javafx.VoteDetailController">
+   <children>
+      <Label fx:id="title" alignment="CENTER" prefHeight="45.0" prefWidth="200.0" text="Label">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="302.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="118.0" text="Voto Delegado: " />
+            <Label fx:id="defaultVote" alignment="CENTER" prefHeight="21.0" prefWidth="149.0" text="Nenhum" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="63.0" prefWidth="302.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="121.0" text="Voto Pessoal: " />
+            <VBox alignment="BOTTOM_CENTER" prefHeight="61.0" prefWidth="143.0">
+               <children>
+                  <RadioButton fx:id="radioBtnTrue" mnemonicParsing="false" onAction="#uncheckFalse" prefHeight="21.0" prefWidth="79.0" text="A Favor" />
+                  <RadioButton fx:id="radioBtnFalse" mnemonicParsing="false" onAction="#uncheckTrue" prefHeight="21.0" prefWidth="79.0" text="Contra" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#vote" text="Votar">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Button>
+      <HBox prefHeight="67.0" prefWidth="586.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#goBack" text="Voltar">
+               <HBox.margin>
+                  <Insets left="50.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

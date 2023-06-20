@@ -1,0 +1,416 @@
+html, body, .login {
+	background-image: url("/images/background_image.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+.login-body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	margin-left: 400px;
+	margin-right: 400px;
+	background-image: none;
+	
+	border: 10px solid;
+	animation: rotateColors 5s linear infinite;
+	background-color: white;
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 20px;
+	transition: font-size 0.3s ease;
+}
+
+.logo-container-login {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.login-form {
+	text-align: center;
+}
+
+.logo-container {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.login-button {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.images-container {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+}
+
+.tabela-container {
+	padding-top: 50px;
+}
+
+h1 {
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    color: white;
+    border:none;
+    border-top:1px solid lightgray;
+	background-color: #080808;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+}
+
+.tema-container select {
+	height: 40px;
+	width: 400px;
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 25px;
+	border: 3px solid;
+	animation: rotateColors 5s linear infinite;
+	background-color: white;
+	text-align: center;
+}
+
+.tema-container {
+	padding-right: 10px;
+}
+
+.logo {
+	width:170px;
+	padding-left: 40px;
+}
+
+.profile {
+	width: 40px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+.tabela {
+	padding: 10px;
+	border-style: outset;
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 25px;
+	border-collapse: separate;
+	width: 80%;
+	margin-left: 150px;
+	border: 8px solid;
+	animation: rotateColors 5s linear infinite;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.sign-out {
+	font-family: "Century Gothic", Arial, sans-serif;
+	color: #007FFF;
+}
+
+.images-container .profile-container .user {
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 25px;
+	color: #007FFF;
+	margin-right: 20px;
+}
+
+th, td {
+	padding: 8px;
+	text-align: center;
+}
+
+th {
+	background-color: #dcdcdc;
+	font-weight: bold;
+}
+
+tr:hover {
+	background-color: #e6e6e6;
+}
+
+ul {
+	font-family: "Century Gothic", Arial, sans-serif;
+	list-style-type: none;
+	font-size: 25px;
+}
+
+.lista-container {
+	padding-top: 50px;
+	padding-left: 100px;
+	border-radius: 5px;
+}
+
+.projetoLei-lista,
+.votacao-lista {
+	margin: 0;
+	padding: 0;
+}
+
+.projetoLei-lista li,
+.votacao-lista li {
+	margin-bottom: 10px;
+}
+
+.projetoLei-lista li span,
+.votacao-lista li span {
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+@keyframes rotateColors {
+	0% {
+		border-color: #7CB9E8;
+	}
+	50% {
+		border-color: #007FFF;
+	}
+	100% {
+		border-color: #7CB9E8;
+	}
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.button-container button,
+.button-container-projLeiDetail button,
+.login-submit-button {
+	border: 3px solid;
+	animation: rotateColors 5s linear infinite;
+	background-color: white;
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 25px;
+	padding-left: 30px;
+	padding-right: 30px;
+	transition: font-size 0.3s ease;
+}
+
+.button-container-apresentarProjLei button {
+	border: 3px solid;
+	animation: rotateColors 5s linear infinite;
+	background-color: white;
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 25px;
+	margin-bottom: 100px;
+	margin-left: 295px;
+	transition: font-size 0.3s ease;
+}
+
+.button-container button:hover,
+.button-container-apresentarProjLei button:hover,
+.button-container-projLeiDetail button:hover {
+	font-size: 28px;
+	cursor: pointer;
+}
+
+.button-cotainer-apresentarProjLei-submit:hover {
+	font-size: 32px;
+	cursor: pointer;
+}
+
+.form-votacao input:hover,
+.submit-button-escDel input:hover {
+	cursor: pointer;
+	background-color: black;
+	color: white;
+}
+
+.login-submit-button:hover {
+	font-size: 25px;
+	cursor: pointer;
+	background-color: black;
+	color: white;
+}
+
+.links-container button:hover {
+	font-size: 28px;
+	width: 400px;
+	height: 220px;
+	cursor: pointer;
+}
+
+.links-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.links-container button {	
+	border: 10px solid;
+	padding: 10px;
+	animation: rotateColors 5s linear infinite;
+	background-color: white;
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 25px;
+	transition: font-size 0.3s ease, width 0.3s ease, height 0.3s ease;
+	margin-left: 20px;
+	width: 390px;
+	height: 210px;
+	box-sizing: border-box;
+}
+
+.top-links,
+.bottom-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.top-link-left,
+.top-link-right,
+.bottom-link-left,
+.bottom-link-right {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.top-link-right {
+	position: absolute;
+	right: 270px;
+	top: 200px;
+	padding: 30px;
+}
+
+.top-link-left {
+	position: absolute;
+	left: 270px;
+	top: 200px;
+	padding: 30px;
+}
+
+.bottom-link-right {
+	position: absolute;
+	right: 270px;
+	top: 500px;
+	padding: 30px;
+}
+
+.bottom-link-left {
+	position: absolute;
+	left: 270px;
+	top: 500px;
+	padding: 30px;
+}
+
+.button-container-apresentarProjLei,
+.button-container-projLeiDetail {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.form-escDel {
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.form-votacao,
+.form-escDel {
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.form-votacao select,
+.delegado-container select {
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 25px;
+	margin-top: 10px;
+}
+
+.delegado-container select {
+	margin-top: 20px;
+	border: 3px solid;
+	animation: rotateColors 5s linear infinite;
+	background-color: white;
+	text-align: center;
+}
+
+.error-message {
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 25px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.form-votacao input,
+.delegado-container input,
+.submit-button-escDel input {
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 25px;
+	border: 3px solid;
+	animation: rotateColors 5s linear infinite;
+	background-color: white;
+	text-align: center;
+}
+
+.submit-button-escDel input {
+	margin-top: 20px;
+}
+
+.back {
+	margin-left: 400px;
+}
+
+.submit,
+.apoiar {
+	margin-right: 400px;
+}
+
+.apl-form {
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.apl-form div {
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: "Century Gothic", Arial, sans-serif;
+}
+
+.apl-form input {
+	border: 3px solid;
+	animation: rotateColors 5s linear infinite;
+	background-color: white;
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 30px;
+	transition: font-size 0.3s ease;
+	margin-left: 20px;
+	margin-top: 0;
+}
+
+.validade-container input {
+	width: 250px;
+}
+
+.validade-container {
+	padding: 0;
+	margin-right: 90px;
+}
+
+.descricao-container {
+	margin-right: 60px;
+}

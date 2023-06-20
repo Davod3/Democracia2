@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="login">
+<head>
+	<meta charset="UTF-8">
+	<link href="/css/style.css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="/images/favicoon.png">
+	<title>Democracia2 - Login</title>
+</head>
+<body class="login-body">
+	<div class="images-container-login">
+		<div class="logo-container-login">
+			<img alt="logo_site_login" src="/images/logo.png" class="logo_login">
+		</div>
+	</div>
+	<div class="login-form">
+		<div class="info-login">
+			<ul>
+			Uma vez que a autenticação não é suportada, <br>
+			adicionámos 4 cidadãos à BD.<br>
+			Para autenticar como um deles basta inserir<br>
+			os respetivos números de CC:<br>
+				<li>12345 : Eduardo</li>
+				<li>123456 : Francisco</li>
+				<li>123457 : Joana</li>
+				<li>123458 : Maria</li>
+					
+				Existem ainda 2 delegados:
+					
+				<li>123456789 : Rute</li>
+				<li>123436789 : Tomás</li>
+			</ul>
+		</div>
+		<form th:action="@{/login}" method="post">
+			<div class="login-input">
+				<label for="cc_number">Número do Cartão de Cidadão</label>
+				<input type="text" id="cc_number" name="cc_number"><br>
+			</div>
+			<div class="login-button">
+				<input type="submit" value="Sign in" class="login-submit-button">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="democracia2.javafx.ChooseDelegateController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="52.0" prefWidth="224.0" text="Escolher Delegado">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="76.0" text="Delegado:" />
+            <ComboBox fx:id="delegateMenu" prefHeight="9.0" prefWidth="148.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="55.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="76.0" text="Tema:" />
+            <ComboBox fx:id="themeMenu" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="9.0" prefWidth="148.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#choose" text="Escolher" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#goBack" text="Voltar">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

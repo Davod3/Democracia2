@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="444.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="democracia2.javafx.LoginController">
+   <children>
+      <Label alignment="CENTER" prefHeight="64.0" prefWidth="336.0" text="Democracia2">
+         <font>
+            <Font name="Calibri" size="43.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="65.0" prefWidth="508.0" text="Uma vez que autenticação não é suportada, adicionamos 4 cidadões à BD. Para autenticar como um deles basta inserir os respetivos numeros de CC: " wrapText="true" />
+      <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="21.0" prefWidth="157.0" text="12345 : Eduardo" wrapText="true" />
+      <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="21.0" prefWidth="157.0" text="123456 : Francisco" wrapText="true" />
+      <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="21.0" prefWidth="157.0" text="123457 : Joana" wrapText="true" />
+      <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="21.0" prefWidth="157.0" text="123458 : Maria" wrapText="true" />
+      <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="33.0" prefWidth="508.0" text="Existem ainda 2 delegados:" wrapText="true" />
+      <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="21.0" prefWidth="157.0" text="123456789 : Rute" wrapText="true" />
+      <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="21.0" prefWidth="157.0" text="123436789 : Tomás" wrapText="true" />
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="147.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" text="Número Cartão Cidadão:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numCC" alignment="CENTER" />
+            <Button fx:id="submitBtn" mnemonicParsing="false" onAction="#submit" text="Ok" />
+         </children>
+      </HBox>
+      <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="141.0" wrapText="true" />
+   </children>
+</VBox>
